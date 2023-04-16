@@ -43,7 +43,7 @@ pipe2Group=new Group();
 function draw() {
 if(gameState===PLAY){
     pipe_move();
-}
+
 if(keyDown("space")){
     bird.velocityY=-8;
 }
@@ -53,7 +53,7 @@ if(pipe1Group.isTouching(bird)|| pipe2Group.isTouching(bird)||bird.y>=600){
 }
 if(frameCount%2===0){
     score++;
-}
+}}
 if(gameState===END){
     bird.y=300
     bird.visible=false;
